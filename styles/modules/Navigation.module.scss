@@ -1,0 +1,26 @@
+@import '../variables';
+
+.nav {
+    top: 0; right: 0; padding: 1.625rem;
+    position: fixed;
+    margin: 2rem;
+    border-radius: 1.5rem;
+    z-index: 30;
+    backdrop-filter: blur(5px);
+    border: 1px solid $clr-navbar-border;
+
+    a {
+        @include Link;
+
+        padding: 3rem 1.875rem;
+        font-family: $txt-secondary;
+        font-size: 1rem; color: #B6C5CE;
+        opacity: 90%;
+        transition-duration: 0.3s;
+    }
+
+}
+
+.home {
+    @include MobileHide;
+}

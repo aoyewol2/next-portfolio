@@ -1,0 +1,82 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+::selection {
+  background: #edeadb; color: #362919;
+}
+
+::-webkit-scrollbar {
+  width: 10px; height: 10px; transition-duration: 0.2s;
+  
+}
+  
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+  
+::-webkit-scrollbar-thumb {
+  background: #252a3b83; border-radius: 20px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252a3ba1; 
+}
+
+// * {
+//   @include Debug;
+// }
+
+html {
+    scroll-behavior: smooth;
+    background-color: $clr-background;
+    color: $clr-primary-body;
+}
+
+body {
+    padding: 8vw;
+    max-width: 90rem;
+    margin: auto;
+    transition-duration: 0.25s;
+}
+
+h2 {
+    color: $clr-primary-body;
+    font-family: $txt-primary;
+    font-size: 2.75rem;
+    font-weight: 600;
+    letter-spacing: .125rem;
+}
+
+h1 {
+  font-family: $txt-primary;
+}
+
+p {
+  font-family: $txt-primary;
+}
+
+@keyframes opacity {
+
+    from { opacity: 0;}
+    to   { opacity: 1;}
+  }
+  @keyframes opacity_blur {
+
+    from { opacity: 0; filter: blur(0.25rem);}
+    to   { opacity: 1; filter: blur(0rem);}
+  }
+
+.reveal_opacity {
+  animation: opacity 1s;
+  animation-timing-function: ease-in-out;
+}
+.reveal_blur {
+  animation: opacity_blur 1.2s;
+  animation-timing-function: ease-in-out;
+}
+.reveal_opacity_backdrop {
+  animation: opacity 2s;
+  animation-timing-function: ease-in-out;
+}

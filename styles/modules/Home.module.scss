@@ -1,0 +1,104 @@
+@import '../variables';
+
+.container {
+    @include Spacing;
+
+    .backdrop {
+
+        @include Center;
+
+        max-width: 100%;
+        max-height: 200vh;
+
+        position: absolute;
+        z-index: -3;
+        opacity: 0.4;
+        margin: auto;
+        object-fit: cover;
+        user-select: none;
+    }
+}
+
+.main {
+
+    font-family: $txt-secondary;
+    padding-top: 3rem;
+
+    h1 {
+        @include mainHeading;
+        transition-duration: 0.2s;
+    }
+    a {
+        color: $clr-primary-body;
+        text-decoration: none;
+    }
+    span {
+        font-size: 1.25rem;
+    }
+
+    .link {
+        @include Link;
+
+        cursor: pointer;
+        opacity: 0.75;
+        transition-duration: 0.15s;
+        font-size: 1.25rem;
+        
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .dash {
+        text-decoration-color: #86a2b944;
+        text-decoration-style: dashed;
+    }
+
+    .outline {
+        text-decoration-color: #ffffff00;
+        text-decoration: none;
+        font-weight: 600;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #cadff3be;
+        -webkit-text-fill-color: #ffffff00;
+    }
+
+    .image {
+        float: right;
+        padding: 1.5rem 3.75rem;
+        transition-duration: 0.25s;
+        backdrop-filter: blur(1.5px);
+        animation: scale 1.75s;
+        user-select: none;
+    }
+
+    .tagline {
+        background: #8DC4E9;
+        background: $clr-gradient;
+        background-clip: text;
+        text-decoration: none;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 1190px) {
+        .image {
+            display: none
+        }
+    }
+
+    @keyframes opacity_blur {
+
+        from { opacity: 0; filter: blur(0.25rem);}
+        to   { opacity: 1; filter: blur(0rem);}
+    }
+
+    @keyframes scale {
+        from {transform: scale(1.1)}
+        to {transform: scale(1)}
+    }
+
+    .blur {
+    animation: opacity_blur 0.75s;
+    animation-timing-function: ease-in-out;
+    }
+}

@@ -1,0 +1,14 @@
+@import '../variables';
+
+.home {
+    opacity: 0.5;
+    font-family: $txt-primary;
+    font-size: 1.125rem;
+    color: $clr-primary-body;
+    text-decoration: none;
+    transition-duration: 0.3s;
+
+    &:hover {
+        opacity: 0.3;
+    }
+}

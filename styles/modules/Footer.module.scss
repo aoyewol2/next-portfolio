@@ -1,0 +1,9 @@
+@import '../variables';
+
+.footer {
+    @include Debug;
+    
+    margin-top: 40rem;
+    text-align: left;
+    padding: 4rem 0;
+}

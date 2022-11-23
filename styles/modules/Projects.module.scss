@@ -1,0 +1,6 @@
+@import '../variables';
+
+.main {
+    @include Spacing;
+    font-family: $txt-primary;
+}

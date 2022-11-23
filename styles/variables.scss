@@ -1,0 +1,45 @@
+@mixin Debug {
+    border: 1px dashed rgb(255, 56, 149); border-radius: 0;
+}
+
+@mixin Center {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin Link {
+    text-decoration: none;
+    user-select: none;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+@mixin MobileHide {
+    @media screen and (max-width: 801px) {
+    display: none;
+    }
+}
+
+@mixin Spacing {
+
+    padding-bottom: 13.5rem;
+}
+
+@mixin mainHeading {
+    font-size: 6vh;
+    font-weight: normal;
+    font-family: $txt-secondary;
+    color: $clr-primary-body;
+}
+
+$clr-background: #060811;
+$clr-gradient: linear-gradient(to right, #8DC4E9 0%, #65a6e8 100%);
+$clr-primary-body: #c8d7e6;
+$clr-navbar-border: #7cafd10a;
+
+$txt-primary: 'Space Grotesk', sans-serif;
+$txt-secondary: 'Space Mono',monospace;

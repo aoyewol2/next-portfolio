@@ -1,0 +1,66 @@
+@import '../variables';
+
+.main {
+
+    flex-direction: column;
+    p {
+        max-width: 40rem;
+        line-height: 2;
+        font-size: 1.25rem;
+        opacity: 0.8;
+    }
+
+    @keyframes rotate {
+        to {filter: hue-rotate(-120deg)}
+    }
+
+    .image {
+        opacity: 0.4;
+        animation: rotate 5s alternate infinite;
+        z-index: -1;
+        -webkit-user-drag: none;
+    }
+    
+    .container {
+        position: fixed;
+        bottom: -50%; right: -10%;
+        filter: blur(5rem);
+    }
+    
+    .link {
+        font-weight: 600;
+        color: $clr-primary-body;
+        text-decoration: none;
+        background-color: rgba(189, 186, 221, 0.075);
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: rgba(189, 186, 221, 0.15);
+        }
+    }
+
+    .block {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .row {
+
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        max-width: 75ch;
+
+        .tag {
+            font-family: $txt-secondary;
+            background-color: rgba(189, 186, 221, 0.050);
+            padding: 0.625rem 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            user-select: none;
+        }
+    }
+
+}
