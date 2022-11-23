@@ -1,10 +1,10 @@
+
 import Link from 'next/link'
 
 import StarIcon from '../../components/icons/StarIcon'
 
 import styles from '../../styles/modules/Navigation.module.scss'
 import Reveal from '../../components/wrappers/RevealDiv'
-
 
 export default function Navigation() {
 	return (

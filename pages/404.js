@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import Image from 'next/image';
 import Head from 'next/head';
 
@@ -12,20 +12,20 @@ import styles from '../styles/modules/NotFound.module.scss';
 export default function NotFound() {
 	return (
 		<>
-			<Head>
-				<title>Page Not Found</title>
-			</Head>
+		<Head>
+			<title>Page Not Found</title>
+		</Head>
 
-			<Reveal>
-				<div className={styles.notfound}>
-					<Image className={styles.image} src={Ghost} alt='Ghost' />
+		<Reveal>
+			<div className={styles.notfound}>
+				<Image className={styles.image} src={Ghost} alt='Ghost' />
 
-					<h1 className={styles.heading}>404</h1>
-					<p className={styles.text}>Page not found</p>
-					<br></br>
-					<BackHome/>
-				</div>
-			</Reveal>
+				<h1 className={styles.heading}>404</h1>
+				<p className={styles.text}>Page not found</p>
+				<br></br>
+				<BackHome/>
+			</div>
+		</Reveal>
 		</>
 	);
 }

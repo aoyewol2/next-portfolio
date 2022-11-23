@@ -24,29 +24,26 @@
   background: #252a3ba1; 
 }
 
-// * {
-//   @include Debug;
-// }
-
 html {
-    scroll-behavior: smooth;
-    background-color: $clr-background;
-    color: $clr-primary-body;
+  scroll-behavior: smooth;
+  background-color: $clr-background;
+  color: $clr-primary-body;
 }
 
 body {
-    padding: 8vw;
-    max-width: 90rem;
-    margin: auto;
-    transition-duration: 0.25s;
+  padding: 8vw;
+  max-width: 90rem;
+  margin: auto;
+  transition-duration: 0.25s;
+  box-sizing: border-box;
 }
 
 h2 {
-    color: $clr-primary-body;
-    font-family: $txt-primary;
-    font-size: 2.75rem;
-    font-weight: 600;
-    letter-spacing: .125rem;
+  color: $clr-primary-body;
+  font-family: $txt-primary;
+  font-size: 2.75rem;
+  font-weight: 600;
+  letter-spacing: .125rem;
 }
 
 h1 {
@@ -59,14 +56,14 @@ p {
 
 @keyframes opacity {
 
-    from { opacity: 0;}
-    to   { opacity: 1;}
-  }
-  @keyframes opacity_blur {
+  from { opacity: 0;}
+  to   { opacity: 1;}
+}
+@keyframes opacity_blur {
 
-    from { opacity: 0; filter: blur(0.25rem);}
-    to   { opacity: 1; filter: blur(0rem);}
-  }
+  from { opacity: 0; filter: blur(0.25rem);}
+  to   { opacity: 1; filter: blur(0rem);}
+}
 
 .reveal_opacity {
   animation: opacity 1s;

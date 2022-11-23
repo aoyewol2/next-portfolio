@@ -1,5 +1,5 @@
-import styles from '../../styles/modules/Footer.module.scss'
 import { useRef } from 'react'
+import styles from '../../styles/modules/Footer.module.scss'
 
 export default function Footer() {
 
@@ -7,8 +7,7 @@ export default function Footer() {
 
   return (
     <div className={styles.footer} id='contact' ref={contactRef}>
-      <h2>Thanks for stopping by!</h2>
-        Get in touch
+        Built with Next.js
     </div>
   )
 }

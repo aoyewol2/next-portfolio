@@ -1,12 +1,10 @@
-/* TODO:
-  - configure fonts correctly
- */
 
 import Head from 'next/head'
 import SocialIcons from '../components/ui/SocialIcons';
 
 import Navigation from '../components/ui/Navigation'
 import '../styles/globals.scss'
+import Footer from '../components/ui/Footer';
 
 export default function MyApp({ Component, pageProps }) {
   

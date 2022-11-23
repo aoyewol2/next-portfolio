@@ -2,7 +2,6 @@ import Email from '../components/icons/socials/Email'
 import GitHub from '../components/icons/socials/GitHub'
 import LinkedIn from '../components/icons/socials/LinkedIn'
 
-
 export default {
 
     socials: [

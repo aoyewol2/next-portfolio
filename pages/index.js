@@ -22,7 +22,7 @@ export default function Home() {
 						src={Backdrop}
 						className={styles.backdrop}
 						alt='Backdrop'
-						width={1650}
+						width={1400}
 						quality={100}/>
 				</Background>
 
@@ -31,7 +31,7 @@ export default function Home() {
 						src={Memoji}
 						className={styles.image}
 						alt='Ashley Oyewole'
-						width={330}
+						width={300}
 						quality={100}/>
 				</Blur>
 
@@ -42,8 +42,7 @@ export default function Home() {
 				<Reveal>
 					<h1>
 						A software developer with a passion for{' '}
-						<u className={styles.dash}>UI</u> and building products and
-						systems users can{' '}
+						<u className={styles.dash}>UI</u> and building products and systems users can{' '}
 						<u className={`${styles.outline} ${styles.blur}`}>interact</u>{' '}
 						with
 					</h1>
