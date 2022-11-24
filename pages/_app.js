@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Ashley Oyewole</title>
-        <link rel='icon' href='/favicon.png' />
+        <link rel='icon' href='/favicon.svg' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
 

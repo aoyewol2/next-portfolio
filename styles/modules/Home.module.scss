@@ -1,8 +1,6 @@
 @import '../variables';
 
 .container {
-    @include Spacing;
-
     .backdrop {
 
         @include Center;
@@ -48,12 +46,7 @@
             opacity: 0.9;
         }
     }
-
-    .dash {
-        text-decoration-color: #86a2b944;
-        text-decoration-style: dashed;
-    }
-
+    
     .outline {
         text-decoration-color: #ffffff00;
         text-decoration: none;
@@ -73,11 +66,7 @@
     }
 
     .tagline {
-        background: #8DC4E9;
-        background: $clr-gradient;
-        background-clip: text;
-        text-decoration: none;
-        -webkit-text-fill-color: transparent;
+        @include Gradient;
     }
 
     @media screen and (max-width: 1190px) {
@@ -93,12 +82,12 @@
     }
 
     @keyframes scale {
-        from {transform: scale(1.1)}
-        to {transform: scale(1)}
+        from {transform: scale(1.1); opacity: 0;}
+        to {transform: scale(1); opacity: 1;}
     }
 
     .blur {
-    animation: opacity_blur 0.75s;
-    animation-timing-function: ease-in-out;
+        animation: opacity_blur 0.75s;
+        animation-timing-function: ease-in-out;
     }
 }

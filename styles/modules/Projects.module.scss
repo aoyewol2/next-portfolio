@@ -3,4 +3,46 @@
 .main {
     @include Spacing;
     font-family: $txt-primary;
+
+    h2 {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-bottom: -2rem;
+        @include Gradient;
+    }
+
+}
+
+.container {
+    background: #080a13;
+    border-radius: 2rem;
+    padding: 4rem; margin: 3rem 0;
+    cursor: pointer;
+    display: flex;
+}
+
+.image {
+    border-radius: 1.5rem;
+    transition-duration: 0.2s;
+    margin-left: -0.5rem;
+    object-fit: cover;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+    &:active {
+        filter: brightness(0.5);
+        transform: scale(0.95);
+    }
+}
+
+.text {
+    z-index: 4;
+    height: min-content;
+    width: 8rem;
 }

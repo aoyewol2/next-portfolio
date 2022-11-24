@@ -6,7 +6,7 @@ import Reveal from '../components/wrappers/RevealDiv';
 import BackHome from '../components/ui/BackHome';
 
 import Backdrop from '../assets/backdrop.png';
-import Ghost from '../assets/ghost.svg';
+import Astronaut from '../assets/astronaut.png';
 import styles from '../styles/modules/NotFound.module.scss';
 
 export default function NotFound() {
@@ -17,11 +17,19 @@ export default function NotFound() {
 		</Head>
 
 		<Reveal>
+			<Image
+				src={Backdrop}
+				className={styles.backdrop}
+				alt='Backdrop'
+				width={500}
+				quality={100}
+			/>
+
 			<div className={styles.notfound}>
-				<Image className={styles.image} src={Ghost} alt='Ghost' />
+				<Image className={styles.image} src={Astronaut} alt='Ghost' />
 
 				<h1 className={styles.heading}>404</h1>
-				<p className={styles.text}>Page not found</p>
+				<p className={styles.text}>Page not found : (</p>
 				<br></br>
 				<BackHome/>
 			</div>

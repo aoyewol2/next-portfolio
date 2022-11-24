@@ -17,11 +17,11 @@
 }
   
 ::-webkit-scrollbar-thumb {
-  background: #252a3b83; border-radius: 20px; 
+  background: #121420; border-radius: 20px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #252a3ba1; 
+  background: #0b0d16; 
 }
 
 html {
@@ -31,7 +31,8 @@ html {
 }
 
 body {
-  padding: 8vw;
+  // @include Debug;
+  padding: 9vw 9vw 3vw 9vw;
   max-width: 90rem;
   margin: auto;
   transition-duration: 0.25s;
@@ -40,18 +41,19 @@ body {
 
 h2 {
   color: $clr-primary-body;
-  font-family: $txt-primary;
   font-size: 2.75rem;
   font-weight: 600;
   letter-spacing: .125rem;
 }
 
-h1 {
+h1, h2, p {
   font-family: $txt-primary;
 }
 
-p {
-  font-family: $txt-primary;
+@media screen and (max-width: 801px) {
+  body {
+    padding: 15vw;
+  }
 }
 
 @keyframes opacity {
@@ -70,7 +72,7 @@ p {
   animation-timing-function: ease-in-out;
 }
 .reveal_blur {
-  animation: opacity_blur 1.2s;
+  animation: opacity_blur 1s;
   animation-timing-function: ease-in-out;
 }
 .reveal_opacity_backdrop {

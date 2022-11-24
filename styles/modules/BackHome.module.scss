@@ -1,10 +1,10 @@
 @import '../variables';
 
 .home {
-    opacity: 0.5;
+    @include Gradient;
+    opacity: 0.8;
     font-family: $txt-primary;
-    font-size: 1.125rem;
-    color: $clr-primary-body;
+    font-size: 1.05rem;
     text-decoration: none;
     transition-duration: 0.3s;
 

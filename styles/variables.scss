@@ -26,7 +26,7 @@
 
 @mixin Spacing {
 
-    padding-bottom: 13.5rem;
+    padding-top: 13.5rem;
 }
 
 @mixin mainHeading {
@@ -36,8 +36,31 @@
     color: $clr-primary-body;
 }
 
-$clr-background: #060811;
-$clr-gradient: linear-gradient(to right, #8DC4E9 0%, #65a6e8 100%);
+@mixin Tag {
+    font-family: $txt-secondary;
+    background-color: rgba(189, 186, 221, 0.030);
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    user-select: none;
+    
+}
+
+@mixin Gradient {
+    background: #8DC4E9;
+    background: $clr-gradient;
+    background-clip: text;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 0.3s;
+}
+
+@mixin Background {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+$clr-background: #060810;
+$clr-gradient: linear-gradient(90deg, #efd5ff 0%, #7278ca 100%);
 $clr-primary-body: #c8d7e6;
 $clr-navbar-border: #7cafd10a;
 

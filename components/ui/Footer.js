@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <div className={styles.footer} id='contact' ref={contactRef}>
-        Built with Next.js
+        Built by Ashley Oyewole
     </div>
   )
 }

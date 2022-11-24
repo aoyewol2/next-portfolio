@@ -12,6 +12,7 @@ import Reveal from '../components/wrappers/RevealDiv';
 import Background from '../components/wrappers/Background';
 
 import Footer from '../components/ui/Footer';
+import ProjectsGrid from '../components/ui/ProjectsGrid';
 
 export default function Home() {
 	return (
@@ -23,7 +24,7 @@ export default function Home() {
 						className={styles.backdrop}
 						alt='Backdrop'
 						width={1400}
-						quality={100}/>
+						quality={100} />
 				</Background>
 
 				<Blur>
@@ -32,19 +33,17 @@ export default function Home() {
 						className={styles.image}
 						alt='Ashley Oyewole'
 						width={300}
-						quality={100}/>
+						quality={100} />
 				</Blur>
 
 				<Blur>
-					<span className={styles.tagline}>Hi, I'm Ashley</span>
+				<span className={styles.tagline}>Hi, I'm Ashley</span>
 				</Blur>
 
 				<Reveal>
 					<h1>
-						A software developer with a passion for{' '}
-						<u className={styles.dash}>UI</u> and building products and systems users can{' '}
-						<u className={`${styles.outline} ${styles.blur}`}>interact</u>{' '}
-						with
+						A software developer with a passion for building products and systems through{' '}
+						<u className={`${styles.outline} ${styles.blur}`}>software</u>
 					</h1>
 				</Reveal>
 
@@ -52,10 +51,10 @@ export default function Home() {
 					<Link
 						href='/pdf/AshleyOyewole_Resume.pdf' target='_blank'
 						className={styles.link}>
-							<ResumeIcon /> Download resume
+						<ResumeIcon /> Download resume
 					</Link>
 				</Blur>
-				{/* <Footer/> */}
+				<ProjectsGrid />
 			</main>
 		</div>
 	);
