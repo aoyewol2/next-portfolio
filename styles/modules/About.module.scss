@@ -11,18 +11,13 @@
     }
     
     .container {
-        position: fixed; display: none;
-        bottom: -50%; right: -10%;
+        position: fixed;
+        bottom: -15%; right: -5%;
         opacity: 0.75;
-        animation: rotate 500s infinite;
-    }
-    .backdrop {
-        -webkit-user-drag: none;
     }
     
-    @keyframes rotate {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(360deg);}
+    .backdrop {
+        -webkit-user-drag: none;
     }
     
     .link {

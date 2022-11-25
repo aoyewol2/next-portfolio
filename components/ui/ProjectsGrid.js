@@ -7,6 +7,7 @@ import Placeholder from '../../components/ui/Placeholder'
 import Grid from '../../data/projects/main'
 
 export default function ProjectsGrid() {
+
   return (
     <div className={styles.main}>
         <h2 className={styles.heading}>Selected Work</h2>

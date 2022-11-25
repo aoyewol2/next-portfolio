@@ -1,0 +1,41 @@
+@import '../variables';
+
+.main {
+   font-family: $txt-primary;
+   flex-direction: column;
+   
+   h2 {
+      font-weight: 500;
+      font-size: 3.25rem;
+   }
+    
+   h3 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: -2rem;
+   }
+   
+   p {
+      font-size: 1.25rem;
+      opacity: 0.8;
+   }
+
+   .long {
+      max-width: 40rem;
+      line-height: 2;
+   }
+
+   .short {
+      font-weight: 700;
+      padding-bottom: 1.5rem;
+   }
+
+   .title {
+      padding-bottom: 7rem;
+   }
+
+   .block {
+      display: inline-block;
+      margin-right: 1rem;
+   }
+}

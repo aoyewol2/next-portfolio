@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import Rotate from '../assets/rotate.png'
+import Grid from '../assets/grid.png'
 import StarIcon from '../components/icons/StarIcon'
 import styles from '../styles/modules/About.module.scss'
 import Blur from '../components/wrappers/BlurDiv';
@@ -22,10 +22,10 @@ export default function about() {
 			<Reveal>
 				<div className={styles.container}>
 					<Image
-						src={Rotate}
+						src={Grid}
 						className={styles.backdrop}
 						alt='Backdrop'
-						width={700}
+						width={500}
 						quality={100} />	
 				</div>
 				
