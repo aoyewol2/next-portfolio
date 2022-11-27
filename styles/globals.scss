@@ -33,26 +33,33 @@ html {
 body {
   // @include Debug;
   padding: 9vw 9vw 3vw 9vw;
-  max-width: 90rem;
+  max-width: 95rem;
   margin: auto;
   transition-duration: 0.25s;
   box-sizing: border-box;
 }
+h1 {
+  @include mainHeading;
+  padding-top: 0.5rem;
+}
 
 h2 {
   color: $clr-primary-body;
-  font-size: 2.75rem;
-  font-weight: 600;
-  letter-spacing: .125rem;
+  font-size: 2rem;
 }
 
-h1, h2, p {
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h1, h2, h3, p {
   font-family: $txt-primary;
 }
 
 @media screen and (max-width: 801px) {
   body {
-    padding: 15vw;
+    padding: 7vw;
   }
 }
 

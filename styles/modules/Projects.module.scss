@@ -27,10 +27,13 @@
 }
 
 .image {
-    border-radius: 1.5rem;
+    border-radius: 2vw;
     transition-duration: 0.2s;
-    margin-left: -0.5rem;
-    object-fit: cover;
+
+    object-fit: contain;
+    width: 70%;
+    position: relative;
+    height: unset;
 
     &:hover {
         transform: scale(1.025);
@@ -45,4 +48,21 @@
     z-index: 4;
     height: min-content;
     width: 8rem;
+}
+
+@media screen and (max-width: 801px) {
+    .container {
+        display: block;
+    }
+    .main {
+        
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .image {
+        width: 100%;
+    }
 }

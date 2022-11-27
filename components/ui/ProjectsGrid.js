@@ -28,12 +28,10 @@ export default function ProjectsGrid() {
               project.preview === false ? <p>Image not found</p> :
                 <Placeholder/>
             }
-
           </div>
         </Link>
       )
       }
-      
     </div>
   )
 }

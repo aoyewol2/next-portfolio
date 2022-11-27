@@ -29,7 +29,7 @@ export default function NotFound() {
 				<Image className={styles.image} src={Astronaut} alt='Ghost' />
 
 				<h1 className={styles.heading}>404</h1>
-				<p className={styles.text}>Page not found : (</p>
+				<p className={styles.text}>Page not found</p>
 				<br></br>
 				<BackHome/>
 			</div>

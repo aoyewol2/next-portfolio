@@ -9,8 +9,9 @@ import Blur from '../components/wrappers/BlurDiv';
 import Reveal from '../components/wrappers/RevealDiv';
 import index from '../data/skills';
 import BackHome from '../components/ui/BackHome';
+import Comet from '../components/ui/Comet';
 
-export default function about() {
+export default function About() {
 	
 	return (
 		<>
@@ -28,16 +29,15 @@ export default function about() {
 						width={500}
 						quality={100} />	
 				</div>
-				
-				<div className={styles.comet}></div>
 
+				<Comet/>
 				<Blur>
 					<BackHome/>
-					<h2>Hi, I'm Ashley</h2>
+					<h1>Hi, I'm Ashley</h1>
 
-					<p className={styles.text} style={{ marginTop: '-2rem'}}>
+					<h3 className={styles.headline}>
 						Nice to meet you
-					</p><br></br>
+					</h3><br></br>
 
 					<p className={styles.text}>
 						I'm a software developer currenty studying <a href='https://uwo.ca/' target='_blank' className={styles.link}>@Western University</a>, as a 2nd year Computer Science student.
@@ -57,7 +57,7 @@ export default function about() {
 					<div className={styles.block}>
 						<StarIcon />
 					</div>
-					<h1 className={styles.block}>Technologies I work with</h1>
+					<h2 className={styles.block}>Technologies I work with</h2>
 
 					<p className={styles.text}>
 						I work with these tools and languages through my place of work, school projects and side projects.

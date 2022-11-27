@@ -32,7 +32,7 @@ export default function Home() {
 						src={Memoji}
 						className={styles.image}
 						alt='Ashley Oyewole'
-						width={300}
+						width={280}
 						quality={100} />
 				</Blur>
 
