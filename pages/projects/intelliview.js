@@ -2,10 +2,10 @@
 import ProjectPage from "../../components/ui/ProjectPage";
 import Data from '../../data/Projects'
 
-export default function SportsDatabase() {
+export default function PostWize() {
    return (
       <>
-         {Data.projects.filter(project => project.id == 2).map(projectID => (
+         {Data.projects.filter(project => project.id == 3).map(projectID => (
 
             <ProjectPage
 
@@ -23,8 +23,8 @@ export default function SportsDatabase() {
                image2={projectID.preview}
                image3={projectID.preview}
 
-               link='/projects/intelliview'
-               next='Intelliview'
+               link='/projects/postwize'
+               next='PostWize'
 
             />
          ))}

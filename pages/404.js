@@ -30,7 +30,7 @@ export default function NotFound() {
 
 				<h1 className={styles.heading}>404</h1>
 				<p className={styles.text}>Page not found</p>
-				<br></br>
+				<br />
 				<BackHome/>
 			</div>
 		</Reveal>

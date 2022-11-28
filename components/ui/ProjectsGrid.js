@@ -1,10 +1,8 @@
 
 import Link from 'next/link'
-
 import styles from '../../styles/modules/Projects.module.scss'
 import Placeholder from '../../components/ui/Placeholder'
-
-import Grid from '../../data/projects/main'
+import Grid from '../../data/Projects'
 
 export default function ProjectsGrid() {
 
@@ -25,7 +23,7 @@ export default function ProjectsGrid() {
 
             </div>
             {
-              project.preview === false ? <p>Image not found</p> :
+              project.preview == false ? <p>Image not found!</p> :
                 <Placeholder/>
             }
           </div>

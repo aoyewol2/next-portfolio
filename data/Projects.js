@@ -1,4 +1,4 @@
-import Placeholder from '../../assets/placeholder.png'
+import Placeholder from '../assets/placeholder.png'
 
 export default {
     projects: [
@@ -24,11 +24,15 @@ export default {
             id: 2,
             title: 'Sports Database',
             type: 'Terminal app',
-            short_desc: 'Store and update sports teams',
-            long_desc: 'not finish',
+            short_desc: 'Create, update and track sports teams',
+
+            long_desc: 'Sports Database tracker is a C-based database system that allows users to store, sort, and return sports team records. It is a simulated sports team tracker where users can add, delete, modify and view up to 32 sports teams.',
+             
+            longer_desc: 'The program stores team names, countries, team colours and more. The database was created by using structs, arrays and pointers.',
+
             preview: Placeholder,
             url: '/projects/sports-database',
-            stack: 'C Language',
+            stack: 'C • Console based',
             date: 'Fall 2022'
         },
 
@@ -36,11 +40,19 @@ export default {
             id: 3,
             title: 'Intelliview',
             type: 'Web app',
-            short_desc: 'Improve your interview skills',
-            long_desc: '',
+            short_desc: 'Improve and boost your interview skills',
+
+            long_desc: 'Intelliview is a comprehensive platform that stores job applications, past interviews, and advice for students to effectively prepare for future interviews at their dream company.',
+
+            longer_desc: 
+            <div>
+            Intelliview makes it easy to navigate through applications featuring a kanban board and simplifies the interview process to increase actionable insights and reduce recruiting stress.
+            <br/><br/>Won 2nd Place Overall at SheHacks 2022.
+            </div>,
+
             preview: Placeholder,
             url: '/projects/intelliview',
-            stack: 'React, HTML, CSS,',
+            stack: 'React • HTML • CSS',
             date: 'Winter 2022'
         },
     ],

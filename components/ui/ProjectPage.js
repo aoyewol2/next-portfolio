@@ -52,8 +52,8 @@ export default function ProjectPage(props) {
                   </p>
                   <p className={styles.long}>
                      {long_desc}
-                     <br></br>
-                     <br></br>
+                     <br />
+                     <br />
                      {longer_desc}
                   </p>
 

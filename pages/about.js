@@ -37,7 +37,7 @@ export default function About() {
 
 					<h3 className={styles.headline}>
 						Nice to meet you
-					</h3><br></br>
+					</h3><br/>
 
 					<p className={styles.text}>
 						I'm a software developer currenty studying <a href='https://uwo.ca/' target='_blank' className={styles.link}>@Western University</a>, as a 2nd year Computer Science student.
@@ -53,7 +53,7 @@ export default function About() {
 				</Blur>
 
 				<Blur>
-					<br></br>
+					<br />
 					<div className={styles.block}>
 						<StarIcon />
 					</div>

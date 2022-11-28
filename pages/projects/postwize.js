@@ -1,6 +1,6 @@
 
 import ProjectPage from "../../components/ui/ProjectPage";
-import Data from '../../data/projects/main'
+import Data from '../../data/Projects'
 
 export default function PostWize() {
   return (
